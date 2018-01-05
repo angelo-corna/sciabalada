@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/layout/activity_statistiche.xml",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/layout/activity_statistiche.xml"
+    },
+    {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/layout/activity_partita_scala.xml",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/layout/activity_partita_scala.xml"
+    },
+    {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/layout/spinnerlayout.xml",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/layout/spinnerlayout.xml"
+    },
+    {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/layout/activity_tavolo_scopa.xml",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/layout/activity_tavolo_scopa.xml"
+    },
+    {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/layout/activity_selectstatistiche.xml",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/layout/activity_selectstatistiche.xml"
+    },
+    {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/layout/activity_manage_score.xml",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/layout/activity_manage_score.xml"
+    },
+    {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/layout/activity_tavolo_scala.xml",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/layout/activity_tavolo_scala.xml"
+    },
+    {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/layout/activity_partita_scopa.xml",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/layout/activity_partita_scopa.xml"
+    },
+    {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/layout/activity_resume.xml",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/layout/activity_resume.xml"
+    },
+    {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/layout/activity_partita_scala40_qd.xml",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/layout/activity_partita_scala40_qd.xml"
+    },
+    {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/layout/activity_settings.xml",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/layout/activity_settings.xml"
+    }
+]
