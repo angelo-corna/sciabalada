@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:2:1-70:12
+ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:2:1-104:12
 	package
 		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:3:5-48
 		INJECTED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml
@@ -26,7 +26,7 @@ ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/An
 		INJECTED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml
 		INJECTED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml
 application
-ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:11:5-65:19
+ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:11:5-99:19
 	android:label
 		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:14:9-41
 	android:allowBackup
@@ -111,15 +111,63 @@ ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/An
 		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:63:13-56
 	android:name
 		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:62:13-79
+activity#com.trentanof.software.sciabalada.GraficoSaldo
+ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:65:9-68:20
+	android:label
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:67:13-34
+	android:name
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:66:13-74
+activity#com.trentanof.software.sciabalada.GraficoPuntate
+ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:69:9-72:20
+	android:label
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:71:13-36
+	android:name
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:70:13-76
+activity#com.trentanof.software.sciabalada.GraficoVincite
+ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:73:9-76:20
+	android:label
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:75:13-36
+	android:name
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:74:13-76
+activity#com.trentanof.software.sciabalada.GraficoPPartiteVinte
+ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:77:9-80:20
+	android:label
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:79:13-54
+	android:name
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:78:13-82
+activity#com.trentanof.software.sciabalada.GraficoPartiteVinte
+ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:81:9-84:20
+	android:label
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:83:13-42
+	android:name
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:82:13-81
+activity#com.trentanof.software.sciabalada.GraficoRientri
+ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:85:9-88:20
+	android:label
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:87:13-36
+	android:name
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:86:13-76
+activity#com.trentanof.software.sciabalada.GraficoManiGiocate
+ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:89:9-92:20
+	android:label
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:91:13-41
+	android:name
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:90:13-80
+activity#com.trentanof.software.sciabalada.GraficoPartiteGiocate
+ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:93:9-96:20
+	android:label
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:95:13-44
+	android:name
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:94:13-83
 uses-permission#android.permission.INTERNET
-ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:67:9-70
+ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:101:9-70
 	android:name
-		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:67:26-68
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:101:26-68
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:68:3-78
+ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:102:3-78
 	android:name
-		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:68:20-76
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:102:20-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:69:9-83
+ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:103:9-83
 	android:name
-		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:69:26-81
+		ADDED from /Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/AndroidManifest.xml:103:26-81

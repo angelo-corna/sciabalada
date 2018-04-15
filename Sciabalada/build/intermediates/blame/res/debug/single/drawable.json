@@ -4,6 +4,10 @@
         "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/co1.png"
     },
     {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/guest31.png",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/guest31.png"
+    },
+    {
         "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/score_fill.xml",
         "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/score_fill.xml"
     },
@@ -18,6 +22,10 @@
     {
         "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/karmen1.png",
         "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/karmen1.png"
+    },
+    {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/guest20.png",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/guest20.png"
     },
     {
         "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/renzokatia0.png",
@@ -48,6 +56,14 @@
         "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/renzo0.png"
     },
     {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/graph2.png",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/graph2.png"
+    },
+    {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/graph3.png",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/graph3.png"
+    },
+    {
         "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/katia0.png",
         "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/katia0.png"
     },
@@ -58,10 +74,6 @@
     {
         "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/renzokatia1.png",
         "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/renzokatia1.png"
-    },
-    {
-        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/gianchi1.png",
-        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/gianchi1.png"
     },
     {
         "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/renzokatiawin.png",
@@ -76,6 +88,10 @@
         "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/mauro0.png"
     },
     {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/guest21.png",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/guest21.png"
+    },
+    {
         "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/angeloco1.png",
         "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/angeloco1.png"
     },
@@ -84,12 +100,8 @@
         "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/score_fill_scopa.xml"
     },
     {
-        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/lorena1.png",
-        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/lorena1.png"
-    },
-    {
-        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/giovanni1.png",
-        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/giovanni1.png"
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/guest10.png",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/guest10.png"
     },
     {
         "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/sciabalada.png",
@@ -104,6 +116,10 @@
         "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/co0.png"
     },
     {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/guest30.png",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/guest30.png"
+    },
+    {
         "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/progress_horizontal_green.xml",
         "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/progress_horizontal_green.xml"
     },
@@ -114,14 +130,6 @@
     {
         "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/angelo0.png",
         "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/angelo0.png"
-    },
-    {
-        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/lorena0.png",
-        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/lorena0.png"
-    },
-    {
-        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/giovanni0.png",
-        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/giovanni0.png"
     },
     {
         "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/maurokarmenwin.png",
@@ -140,12 +148,12 @@
         "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/karmen0.png"
     },
     {
-        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/gianchi0.png",
-        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/gianchi0.png"
-    },
-    {
         "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/progress_horizontal_orange.xml",
         "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/progress_horizontal_orange.xml"
+    },
+    {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/guest11.png",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/guest11.png"
     },
     {
         "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/maurokarmen1.png",
@@ -154,6 +162,10 @@
     {
         "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/katia1.png",
         "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/katia1.png"
+    },
+    {
+        "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/graph1.png",
+        "source": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/src/main/res/drawable/graph1.png"
     },
     {
         "merged": "/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/res/merged/debug/drawable/progress_horizontal_red.xml",

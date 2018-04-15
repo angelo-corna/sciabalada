@@ -231,10 +231,10 @@ public class PartitaScala extends Activity {
 			 params.topMargin=10;
 			 params.bottomMargin=10;
 	
-			 ImageView image = new ImageView(this);
-			 int id = getResources().getIdentifier(plselected.getPictureName(), "drawable", getPackageName());
-		     image.setImageResource(id);
-		     layout.addView(image,params);
+			 //ImageView image = new ImageView(this);
+			 //int id = getResources().getIdentifier(plselected.getPictureName(), "drawable", getPackageName());
+		     //image.setImageResource(id);
+		     //layout.addView(image,params);
 	
 			 alertDialogBuilder.setView(layout); 
 	

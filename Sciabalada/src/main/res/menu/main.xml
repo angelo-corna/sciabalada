@@ -18,4 +18,12 @@
 	    android:showAsAction="never"
 	    android:title="Exit"/>
 
+
+	<item
+		android:id="@+id/action_to_image"
+		android:orderInCategory="100"
+		android:showAsAction="never"
+		android:title="Google Image Chart API"/>
+
+
 </menu>

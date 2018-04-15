@@ -164,8 +164,7 @@ public class MainActivity extends Activity {
 	/** Called when the user clicks the Statistiche button */
 	public void statistiche(View v) {
 		Intent intent = new Intent(this, SelectStatistiche.class);
-		//Intent intent = new Intent(this, Statistiche.class);
-		//intent.putExtra(EXTRA_MESSAGE, "0");
+//		Intent intent = new Intent(this, GraficoSaldo.class);
 		this.startActivity(intent);
 	}
 	

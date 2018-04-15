@@ -1,4 +1,5 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ScrollView01"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
@@ -25,16 +26,96 @@
 			android:layout_height="match_parent" >
 
 			<TextView
-				android:id="@+id/scalaH"
+				android:id="@+id/scalaChart"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:textSize="20sp"
 				android:layout_marginLeft="20dp"
 				android:layout_marginTop="20dp"
 				android:textStyle="bold"
-				android:text="Scala 40" />
+				android:text="Scala 40"/>
 
-		</TableRow>
+            <ImageButton
+                android:id="@+id/partiteGiocateGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/graph3"
+                android:background="#dcdcdc"
+                android:onClick="GraficoPartiteGiocate"/>
+
+            <ImageButton
+                android:id="@+id/maniGiocateGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/graph1"
+                android:background="#dcdcdc"
+                android:onClick="GraficoManiGiocate"/>
+
+            <ImageButton
+                android:id="@+id/rientriGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/graph1"
+                android:background="#dcdcdc"
+                android:onClick="GraficoRientri"/>
+
+            <ImageButton
+                android:id="@+id/partiteVinteGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/graph2"
+                android:background="#dcdcdc"
+                android:onClick="GraficoPartiteVinte"/>
+
+            <ImageButton
+                android:id="@+id/puntateGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/graph1"
+                android:background="#dcdcdc"
+                android:onClick="GraficoPuntate"/>
+
+            <ImageButton
+                android:id="@+id/vinciteGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/graph3"
+                android:background="#dcdcdc"
+                android:onClick="GraficoVincite"/>
+
+            <ImageButton
+                android:id="@+id/saldoGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/graph1"
+                android:background="#dcdcdc"
+                android:onClick="GraficoSaldo"/>
+
+            <ImageButton
+                android:id="@+id/ppartiteVinteGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/graph2"
+                android:background="#dcdcdc"
+                android:onClick="GraficoPPartiteVinte"/>
+
+        </TableRow>
 
         <TableRow
             android:id="@+id/TableRow02"
@@ -65,7 +146,7 @@
 		    android:textStyle="bold"
 		    android:gravity="center"
 		    android:text="Partite Giocate" />
-		   
+
 		   <TextView
 		    android:id="@+id/plMG"
 		    android:layout_width="wrap_content"
@@ -78,7 +159,7 @@
 		    android:textStyle="bold"
 		    android:gravity="center"
 		    android:text="Mani Giocate" />
-		   
+
 		   		   <TextView
 		    android:id="@+id/plRI"
 		    android:layout_width="wrap_content"
@@ -91,7 +172,7 @@
 		    android:textStyle="bold"
 		    android:gravity="center"
 		    android:text="Rientri" />
-		   
+
 		   <TextView
 		    android:id="@+id/plPV"
 		    android:layout_width="wrap_content"
@@ -117,7 +198,7 @@
 		    android:textStyle="bold"
 		    android:gravity="center"
 		    android:text="Puntate(€)" />
-		   
+
 		   <TextView
 		    android:id="@+id/plSV"
 		    android:layout_width="wrap_content"
@@ -130,7 +211,7 @@
 		    android:textStyle="bold"
 		    android:gravity="center"
 		    android:text="Vincite(€)" />
-		   
+
 		   <TextView
 		    android:id="@+id/plSA"
 		    android:layout_width="wrap_content"
@@ -143,7 +224,7 @@
 		    android:textStyle="bold"
 		    android:gravity="center"
 		    android:text="Saldo(€)" />
-		   
+
 		   <TextView
 		    android:id="@+id/plPPV"
 		    android:layout_width="wrap_content"
@@ -156,7 +237,7 @@
 		    android:textStyle="bold"
 		    android:gravity="center"
 		    android:text="% Partite Vinte" />
-		   
+
   		</TableRow>
 
         <TableRow
@@ -369,7 +450,7 @@
 		    android:layout_marginTop="20dp"
 		    android:textStyle="bold"
 		    android:background="@color/lightYellow"
-		    android:text="Gianchi" />
+		    android:text="Karmen" />
 
 		  <TextView
 		    android:id="@+id/pl3PG"
@@ -468,7 +549,7 @@
 		    android:layout_marginTop="20dp"
 		    android:textStyle="bold"
 		    android:background="@color/lightYellow"
-		    android:text="Giovanni" />
+		    android:text="Katia" />
 	        
 		   <TextView
 		    android:id="@+id/pl4PG"
@@ -566,7 +647,7 @@
 		    android:layout_marginTop="20dp"
 		    android:textStyle="bold"
 		    android:background="@color/lightYellow"
-		    android:text="Karmen" />
+		    android:text="Mario" />
 	        
 		   <TextView
 		    android:id="@+id/pl5PG"
@@ -664,7 +745,7 @@
 		    android:layout_marginTop="20dp"
 		    android:textStyle="bold"
 		    android:background="@color/lightYellow"
-		    android:text="Katia" />
+		    android:text="Mauro" />
 	        
 		   <TextView
 		    android:id="@+id/pl6PG"
@@ -762,7 +843,7 @@
 		    android:layout_marginTop="20dp"
 		    android:textStyle="bold"
 		    android:background="@color/lightYellow"
-		    android:text="Lorena" />
+		    android:text="Renzo" />
 	        
 		   <TextView
 		    android:id="@+id/pl7PG"
@@ -860,7 +941,7 @@
 		    android:layout_marginTop="20dp"
 		    android:textStyle="bold"
 		    android:background="@color/lightYellow"
-		    android:text="Mario" />
+		    android:text="Others" />
 	        
 		   <TextView
 		    android:id="@+id/pl8PG"
@@ -944,203 +1025,6 @@
 		   
   		</TableRow>
 
-        <TableRow
-            android:id="@+id/TableRow10a"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-        
-		   <TextView
-		    android:id="@+id/pl9N"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="15sp"
-		    android:layout_marginLeft="20dp"
-		    android:layout_marginTop="20dp"
-		    android:textStyle="bold"
-		    android:background="@color/lightYellow"
-		    android:text="Mauro" />
-	        
-		   <TextView
-		    android:id="@+id/pl9PG"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="15sp"
-		    android:layout_marginLeft="0dp"
-		    android:gravity="center"
-		    android:background="@color/lightYellow"
-		    android:layout_marginTop="20dp"/>
-
-		   <TextView
-		    android:id="@+id/pl9MG"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="15sp"
-		    android:layout_marginLeft="0dp"
-		    android:gravity="center"
-		    android:background="@color/lightYellow"
-		    android:layout_marginTop="20dp"/>
-
-		   <TextView
-		    android:id="@+id/pl9RI"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="15sp"
-		    android:layout_marginLeft="0dp"
-		    android:gravity="center"
-		    android:background="@color/lightYellow"
-		    android:layout_marginTop="20dp"/>
-		   
-		   <TextView
-		    android:id="@+id/pl9PV"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="15sp"
-		    android:layout_marginLeft="0dp"
-		    android:gravity="center"
-		    android:background="@color/lightYellow"
-		    android:layout_marginTop="20dp"/>
-
-		   <TextView
-		    android:id="@+id/pl9SS"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="15sp"
-		    android:layout_marginLeft="0dp"
-		    android:gravity="center"
-		    android:background="@color/lightYellow"
-		    android:layout_marginTop="20dp"/>
-		   
-		   <TextView
-		    android:id="@+id/pl9SV"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="15sp"
-		    android:layout_marginLeft="0dp"
-		    android:gravity="center"
-		    android:background="@color/lightYellow"
-		    android:layout_marginTop="20dp"/>
-		   
-		   <TextView
-		    android:id="@+id/pl9SA"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="15sp"
-		    android:layout_marginLeft="0dp"
-		    android:gravity="center"
-		    android:background="@color/lightYellow"
-		    android:layout_marginTop="20dp"/>
-		   
-		   <TextView
-		    android:id="@+id/pl9PPV"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="15sp"
-		    android:layout_marginLeft="0dp"
-		    android:gravity="center"
-		    android:background="@color/lightYellow"
-		    android:layout_marginTop="20dp"/>
-		   
-  		</TableRow>
-        
-        <TableRow
-            android:id="@+id/TableRow10b"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-        
-		   <TextView
-		    android:id="@+id/pl10N"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="15sp"
-		    android:layout_marginLeft="20dp"
-		    android:layout_marginTop="20dp"
-		    android:textStyle="bold"
-		    android:background="@color/lightYellow"
-		    android:text="Renzo" />
-	        
-		   <TextView
-		    android:id="@+id/pl10PG"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="15sp"
-		    android:layout_marginLeft="0dp"
-		    android:gravity="center"
-		    android:background="@color/lightYellow"
-		    android:layout_marginTop="20dp"/>
-
-		   <TextView
-		    android:id="@+id/pl10MG"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="15sp"
-		    android:layout_marginLeft="0dp"
-		    android:gravity="center"
-		    android:background="@color/lightYellow"
-		    android:layout_marginTop="20dp"/>
-
-		   <TextView
-		    android:id="@+id/pl10RI"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="15sp"
-		    android:layout_marginLeft="0dp"
-		    android:gravity="center"
-		    android:background="@color/lightYellow"
-		    android:layout_marginTop="20dp"/>
-		   
-		   <TextView
-		    android:id="@+id/pl10PV"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="15sp"
-		    android:layout_marginLeft="0dp"
-		    android:gravity="center"
-		    android:background="@color/lightYellow"
-		    android:layout_marginTop="20dp"/>
-
-		   <TextView
-		    android:id="@+id/pl10SS"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="15sp"
-		    android:layout_marginLeft="0dp"
-		    android:gravity="center"
-		    android:background="@color/lightYellow"
-		    android:layout_marginTop="20dp"/>
-		   
-		   <TextView
-		    android:id="@+id/pl10SV"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="15sp"
-		    android:layout_marginLeft="0dp"
-		    android:gravity="center"
-		    android:background="@color/lightYellow"
-		    android:layout_marginTop="20dp"/>
-		   
-		   <TextView
-		    android:id="@+id/pl10SA"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="15sp"
-		    android:layout_marginLeft="0dp"
-		    android:gravity="center"
-		    android:background="@color/lightYellow"
-		    android:layout_marginTop="20dp"/>
-		   
-		   <TextView
-		    android:id="@+id/pl10PPV"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="15sp"
-		    android:layout_marginLeft="0dp"
-		    android:gravity="center"
-		    android:background="@color/lightYellow"
-		    android:layout_marginTop="20dp"/>
-		   
-  		</TableRow>
-        
-        
         <TableRow
             android:id="@+id/TableRow11"
             android:layout_width="match_parent"
@@ -1854,9 +1738,8 @@
 		   
 		   
   		</TableRow>
-        
-        
-   </TableLayout>
+
+    </TableLayout>
     
 </RelativeLayout>
 

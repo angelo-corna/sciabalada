@@ -19,7 +19,7 @@
 	    android:layout_width="100dp"
 	    android:layout_height="wrap_content"
         android:inputType="numberDecimal"
-        android:textSize="35sp" 
+        android:textSize="35sp"
 	    android:layout_marginLeft="30dp"
 	    android:layout_marginTop="20dp"
 	    android:gravity="center"
@@ -40,7 +40,7 @@
 	    android:layout_width="100dp"
 	    android:layout_height="wrap_content"
         android:inputType="numberDecimal"
-        android:textSize="35sp" 
+        android:textSize="35sp"
 	    android:layout_marginLeft="30dp"
 	    android:layout_marginTop="20dp"
    	    android:gravity="center"
@@ -84,32 +84,31 @@
 	      		android:src="@drawable/co0"
 			    android:layout_marginTop="150dp"
 	      		android:onClick="setCo"/>
-	        	
-	        <ImageView
-	            android:id="@+id/gianchi"
-	      		android:layout_width="wrap_content"
-	      		android:layout_height="wrap_content"
-	      		android:src="@drawable/gianchi0"
-			    android:layout_marginTop="150dp"
-	      		android:onClick="setGianchi"/>
-	        
-	        <ImageView
-	            android:id="@+id/giovanni"
-	      		android:layout_width="wrap_content"
-	      		android:layout_height="wrap_content"
-	      		android:src="@drawable/giovanni0"
-			    android:layout_marginTop="150dp"
-	      		android:onClick="setGiovanni"/>
-	        	        
-  	        <ImageView
-	            android:id="@+id/karmen"
-	      		android:layout_width="wrap_content"
-	      		android:layout_height="wrap_content"
-	      		android:src="@drawable/karmen0"
-			    android:layout_marginTop="150dp"
-	      		android:onClick="setKarmen"/>
-  	        
-  	        
+
+			 <ImageView
+				 android:id="@+id/katia"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:src="@drawable/katia0"
+				 android:layout_marginTop="150dp"
+				 android:onClick="setKatia"/>
+
+			 <ImageView
+				 android:id="@+id/mario"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:src="@drawable/mario0"
+				 android:layout_marginTop="150dp"
+				 android:onClick="setMario"/>
+
+			 <ImageView
+				 android:id="@+id/mauro"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:src="@drawable/mauro0"
+				 android:layout_marginTop="150dp"
+				 android:onClick="setMauro"/>
+
         </TableRow>
         <TableRow
             android:id="@+id/TableRow02"
@@ -131,70 +130,37 @@
 		        android:gravity="center|center"
 		        android:textSize="30sp"
 		        android:text="Co" />
-            
-            <TextView
-		        android:id="@+id/name3"
-		        android:layout_width="fill_parent"
-		        android:layout_height="wrap_content"
-		        android:gravity="center|center"
-		        android:textSize="30sp"
-		        android:text="Gianchi" />
-            
-            <TextView
-		        android:id="@+id/name4"
-		        android:layout_width="fill_parent"
-		        android:layout_height="wrap_content"
-		        android:gravity="center|center"
-		        android:textSize="30sp"
-		        android:text="Giovanni" />
-            		
-            <TextView
-		        android:id="@+id/name5"
-		        android:layout_width="fill_parent"
-		        android:layout_height="wrap_content"
-		        android:gravity="center|center"
-		        android:textSize="30sp"
-		        android:text="Karmen" />
-            </TableRow>
-        
+
+			<TextView
+				android:id="@+id/name6"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center|center"
+				android:textSize="30sp"
+				android:text="Katia" />
+
+
+			<TextView
+				android:id="@+id/name8"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center|center"
+				android:textSize="30sp"
+				android:text="Mario" />
+
+			<TextView
+				android:id="@+id/name9"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center|center"
+				android:textSize="30sp"
+				android:text="Mauro" />
+		</TableRow>
         <TableRow
             android:id="@+id/TableRow03"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
         
-
-  	        <ImageView
-	            android:id="@+id/katia"
-	      		android:layout_width="wrap_content"
-	      		android:layout_height="wrap_content"
-	      		android:src="@drawable/katia0"
-			    android:layout_marginTop="50dp"
-	      		android:onClick="setKatia"/>
-  	        
-  	        <ImageView
-	            android:id="@+id/lorena"
-	      		android:layout_width="wrap_content"
-	      		android:layout_height="wrap_content"
-	      		android:src="@drawable/lorena0"
-			    android:layout_marginTop="50dp"
-	      		android:onClick="setLorena"/>
-  	        	        
-	        <ImageView
-	            android:id="@+id/mario"
-	      		android:layout_width="wrap_content"
-	      		android:layout_height="wrap_content"
-	      		android:src="@drawable/mario0"
-			    android:layout_marginTop="50dp"
-	      		android:onClick="setMario"/>
-	        
-	        <ImageView
-	            android:id="@+id/mauro"
-	      		android:layout_width="wrap_content"
-	      		android:layout_height="wrap_content"
-	      		android:src="@drawable/mauro0"
-			    android:layout_marginTop="50dp"
-	      		android:onClick="setMauro"/>
-	        	        
 	        <ImageView
 	            android:id="@+id/renzo"
 	      		android:layout_width="wrap_content"
@@ -202,46 +168,47 @@
 	      		android:src="@drawable/renzo0"
 			    android:layout_marginTop="50dp"
 	      		android:onClick="setRenzo"/>
-	        
-	        	        
-        </TableRow>
+
+			<ImageView
+				android:id="@+id/karmen"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/karmen0"
+				android:layout_marginTop="50dp"
+				android:onClick="setKarmen"/>
+
+			<ImageView
+				android:id="@+id/guest1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/guest10"
+				android:layout_marginTop="50dp"
+				android:onClick="setGuest1"/>
+
+			<ImageView
+				android:id="@+id/guest2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/guest20"
+				android:layout_marginTop="50dp"
+				android:onClick="setGuest2"/>
+
+
+			<ImageView
+				android:id="@+id/guest3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/guest30"
+				android:layout_marginTop="50dp"
+				android:onClick="setGuest3"/>
+
+		</TableRow>
+
         <TableRow
             android:id="@+id/TableRow04"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
 
-            <TextView
-		        android:id="@+id/name6"
-		        android:layout_width="fill_parent"
-		        android:layout_height="wrap_content"
-		        android:gravity="center|center"
-		        android:textSize="30sp"
-		        android:text="Katia" />
-
-            <TextView
-		        android:id="@+id/name7"
-		        android:layout_width="fill_parent"
-		        android:layout_height="wrap_content"
-		        android:gravity="center|center"
-		        android:textSize="30sp"
-		        android:text="Lorena" />
-            
-            <TextView
-		        android:id="@+id/name8"
-		        android:layout_width="fill_parent"
-		        android:layout_height="wrap_content"
-		        android:gravity="center|center"
-		        android:textSize="30sp"
-		        android:text="Mario" />
-            
-            <TextView
-		        android:id="@+id/name9"
-		        android:layout_width="fill_parent"
-		        android:layout_height="wrap_content"
-		        android:gravity="center|center"
-		        android:textSize="30sp"
-		        android:text="Mauro" />
-            
             <TextView
 		        android:id="@+id/name10"
 		        android:layout_width="fill_parent"
@@ -249,7 +216,37 @@
 		        android:gravity="center|center"
 		        android:textSize="30sp"
 		        android:text="Renzo" />
-            		
+
+			<TextView
+				android:id="@+id/name5"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center|center"
+				android:textSize="30sp"
+				android:text="Karmen" />
+			<TextView
+				android:id="@+id/name3"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center|center"
+				android:textSize="30sp"
+				android:text="Guest1" />
+
+			<TextView
+				android:id="@+id/name4"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center|center"
+				android:textSize="30sp"
+				android:text="Guest2" />
+
+			<TextView
+				android:id="@+id/name7"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center|center"
+				android:textSize="30sp"
+				android:text="Guest3" />
         </TableRow>
 	</TableLayout>
     

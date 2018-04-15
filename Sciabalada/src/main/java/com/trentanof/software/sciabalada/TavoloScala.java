@@ -20,14 +20,14 @@ public class TavoloScala extends Activity {
 	
 	int Angelo = 0;
 	int Co = 0;
-	int Gianchi = 0;
+	int Guest1 = 0;
 	int Karmen = 0;
 	int Katia = 0;
 	int Mario = 0;
 	int Mauro = 0;
 	int Renzo = 0;
-	int Lorena = 0;
-	int Giovanni = 0;
+	int Guest3 = 0;
+	int Guest2 = 0;
 	String message = "";
 	
 	public final static String EXTRA_MESSAGE = "com.trentanof.software.sciabalada.MESSAGE";
@@ -73,13 +73,13 @@ public class TavoloScala extends Activity {
 			{img.setImageResource(R.drawable.co0); Co = 0;}
 	}	
 
-	/** Called when the user clicks the gianchi image */
-	public void setGianchi(View v) {
-		ImageView img= (ImageView) findViewById(R.id.gianchi);
-		if (Gianchi == 0)
-			{img.setImageResource(R.drawable.gianchi1); Gianchi = 1;}
+	/** Called when the user clicks the guest1 image */
+	public void setGuest1(View v) {
+		ImageView img= (ImageView) findViewById(R.id.guest1);
+		if (Guest1 == 0)
+			{img.setImageResource(R.drawable.guest11); Guest1 = 1;}
 		else
-			{img.setImageResource(R.drawable.gianchi0); Gianchi = 0;}
+			{img.setImageResource(R.drawable.guest10); Guest1 = 0;}
 	}	
 	
 	/** Called when the user clicks the karmen image */
@@ -127,22 +127,22 @@ public class TavoloScala extends Activity {
 			{img.setImageResource(R.drawable.renzo0); Renzo = 0;}
 	}	
 	
-	/** Called when the user clicks the lorena image */
-	public void setLorena(View v) {
-		ImageView img= (ImageView) findViewById(R.id.lorena);
-		if (Lorena == 0)
-			{img.setImageResource(R.drawable.lorena1); Lorena = 1;}
+	/** Called when the user clicks the guest3 image */
+	public void setGuest3(View v) {
+		ImageView img= (ImageView) findViewById(R.id.guest3);
+		if (Guest3 == 0)
+			{img.setImageResource(R.drawable.guest31); Guest3 = 1;}
 		else
-			{img.setImageResource(R.drawable.lorena0); Lorena = 0;}
+			{img.setImageResource(R.drawable.guest30); Guest3 = 0;}
 	}	
 
-	/** Called when the user clicks the giovanni image */
-	public void setGiovanni(View v) {
-		ImageView img= (ImageView) findViewById(R.id.giovanni);
-		if (Giovanni == 0)
-			{img.setImageResource(R.drawable.giovanni1); Giovanni = 1;}
+	/** Called when the user clicks the guest2 image */
+	public void setGuest2(View v) {
+		ImageView img= (ImageView) findViewById(R.id.guest2);
+		if (Guest2 == 0)
+			{img.setImageResource(R.drawable.guest21); Guest2 = 1;}
 		else
-			{img.setImageResource(R.drawable.giovanni0); Giovanni = 0;}
+			{img.setImageResource(R.drawable.guest20); Guest2 = 0;}
 	}
 	
 /** Called when the user clicks the play button */
@@ -154,7 +154,7 @@ public class TavoloScala extends Activity {
 		EditText editTextr = (EditText) findViewById(R.id.valueRientri);
 		String valueR = editTextr.getText().toString();
 		
-		int numPlayers = Angelo + Co + Gianchi + Karmen + Katia + Mario + Mauro + Renzo;
+		int numPlayers = Angelo + Co + Guest1 + Karmen + Katia + Mario + Mauro + Renzo;
 
 		if (message.equals("scala40")){
 			if (valueP.equals("") || valueR.equals("") || numPlayers < 2) {
@@ -175,11 +175,11 @@ public class TavoloScala extends Activity {
 				String message = "new#"+valueP+","+valueR;
 				if (Angelo == 1)message=message+"#Angelo";
 				if (Co == 1)message=message+"#Co";
-				if (Gianchi == 1)message=message+"#Gianchi";
-				if (Giovanni == 1)message=message+"#Giovanni";
+				if (Guest1 == 1)message=message+"#Guest1";
+				if (Guest2 == 1)message=message+"#Guest2";
 				if (Karmen == 1)message=message+"#Karmen";
 				if (Katia == 1)message=message+"#Katia";
-				if (Lorena == 1)message=message+"#Lorena";
+				if (Guest3 == 1)message=message+"#Guest3";
 				if (Mario == 1)message=message+"#Mario";
 				if (Mauro == 1)message=message+"#Mauro";
 				if (Renzo == 1)message=message+"#Renzo";
@@ -206,11 +206,11 @@ public class TavoloScala extends Activity {
 				String message = "new#"+valueP;
 				if (Angelo == 1)message=message+"#Angelo";
 				if (Co == 1)message=message+"#Co";
-				if (Gianchi == 1)message=message+"#Gianchi";
-				if (Giovanni == 1)message=message+"#Giovanni";
+				if (Guest1 == 1)message=message+"#Guest1";
+				if (Guest2 == 1)message=message+"#Guest2";
 				if (Karmen == 1)message=message+"#Karmen";
 				if (Katia == 1)message=message+"#Katia";
-				if (Lorena == 1)message=message+"#Lorena";
+				if (Guest3 == 1)message=message+"#Guest3";
 				if (Mario == 1)message=message+"#Mario";
 				if (Mauro == 1)message=message+"#Mauro";
 				if (Renzo == 1)message=message+"#Renzo";

@@ -1,4 +1,4 @@
-#Mon Feb 27 21:57:57 CET 2017
+#Sun Apr 15 17:37:10 CEST 2018
 base.0=/Users/angelo/AndroidStudioProjects/sciabalada/Sciabalada/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_d1661cc79c8963063be3d2df9d527cf00b0b4e74
 renamed.1=classes.dex
 renamed.0=classes2.dex

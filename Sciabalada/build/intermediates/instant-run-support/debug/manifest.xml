@@ -67,6 +67,38 @@
             android:name="com.trentanof.software.sciabalada.SelectStatistiche"
             android:label="Seleziona Range Statistiche" >
         </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.GraficoSaldo"
+            android:label="Saldo" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.GraficoPuntate"
+            android:label="Puntate" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.GraficoVincite"
+            android:label="Vincite" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.GraficoPPartiteVinte"
+            android:label="Percentuale Partite Vinte" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.GraficoPartiteVinte"
+            android:label="Partite Vinte" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.GraficoRientri"
+            android:label="Rientri" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.GraficoManiGiocate"
+            android:label="Mani Giocate" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.GraficoPartiteGiocate"
+            android:label="Partite Giocate" >
+        </activity>
     </application>
 
 </manifest>
