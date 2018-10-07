@@ -116,7 +116,7 @@ public class MainActivity extends Activity {
 			 
 			 AlertDialog.Builder builder = new AlertDialog.Builder(this);
 			 //builder.setTitle("My Title");
-			 builder.setMessage("\nSCIABALADA\nVersion 1.2.0\n\nAuthor: Angelo Corna\nTrentanof Software\n");
+			 builder.setMessage("\nSCIABALADA\nVersion 1.3.0\n\nAuthor: Angelo Corna\nTrentanof Software\n");
 			 builder.setPositiveButton("OK", null);
 			 AlertDialog dialog = builder.show();
 			 TextView messageText = (TextView)dialog.findViewById(android.R.id.message);
