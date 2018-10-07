@@ -57,6 +57,7 @@ public class PartitaScala40QD extends Activity {
 	
 	final Context context = this;
 	String valueP;
+	int punteggio;
 	int numPlayers=0;
 	String kp;
 	String destinationPath;
@@ -81,12 +82,14 @@ public class PartitaScala40QD extends Activity {
 			switch (plcounter) {
 				case 1:	kp = name;
 						if(!kp.equals("new")){fileName = kp;}
-				break;	
-				case 2:	valueP = name;
-				break;	
+				break;
+				case 2:	String[] cash = name.split(",");
+					valueP=cash[0];
+					punteggio=Integer.parseInt(cash[1]);
+				break;
 				case 3: pl1.init(kp,name);
 						numPlayers += 1;
-				break;	
+				break;
 				case 4: pl2.init(kp,name);
 						numPlayers += 1;
 				break;	
@@ -245,7 +248,7 @@ public class PartitaScala40QD extends Activity {
 			            		if(!replaceScoreString.equals("")){
 			            			int replaceScore = Integer.parseInt(replaceScoreString);
 			            			plselected.setScore(replaceScore);
-			            			if(plselected.getScore() > 150){plselected.setIsOut(true);}
+			            			if(plselected.getScore() > punteggio){plselected.setIsOut(true);}
 			            			DisplayPlayerData(plselected);
 			            		}
 								saveFile("onGoing");
@@ -261,7 +264,7 @@ public class PartitaScala40QD extends Activity {
 			            			int addScore = Integer.parseInt(addScoreString);
 			            			plselected.setScore(plselected.getScore()+addScore);
 			            			plselected.setGames(plselected.getGames()+1);
-			            			if(plselected.getScore() > 150){plselected.setIsOut(true);}
+			            			if(plselected.getScore() > punteggio){plselected.setIsOut(true);}
 			            			DisplayPlayerData(plselected);
 			            			setColorsGames();
 			            			// and the winner is .....
@@ -336,6 +339,7 @@ public class PartitaScala40QD extends Activity {
 		switch (rank) {
 	        case 1: TextView pl1Name = (TextView) findViewById(R.id.player1);
 	        		ProgressBar scoreBar1 = (ProgressBar) findViewById(R.id.scoreBar1);
+					scoreBar1.setMax(punteggio);
 	        		TextView scoreText1 = (TextView) findViewById(R.id.scoreText1);
 	        		TextView pl1Games = (TextView) findViewById(R.id.games1);
 					TextView imgGames1 = (TextView) findViewById(R.id.games1); 
@@ -360,6 +364,7 @@ public class PartitaScala40QD extends Activity {
 	        		break;
 	        case 2: TextView pl2Name = (TextView) findViewById(R.id.player2);
 					ProgressBar scoreBar2 = (ProgressBar) findViewById(R.id.scoreBar2);
+					scoreBar2.setMax(punteggio);
 					TextView scoreText2 = (TextView) findViewById(R.id.scoreText2);
 	        		TextView pl2Games = (TextView) findViewById(R.id.games2);
 					TextView imgGames2 = (TextView) findViewById(R.id.games2); 
@@ -384,6 +389,7 @@ public class PartitaScala40QD extends Activity {
 	        		break;
 	        case 3: TextView pl3Name = (TextView) findViewById(R.id.player3);
 					ProgressBar scoreBar3 = (ProgressBar) findViewById(R.id.scoreBar3);
+					scoreBar3.setMax(punteggio);
 					TextView scoreText3 = (TextView) findViewById(R.id.scoreText3);
 	        		TextView pl3Games = (TextView) findViewById(R.id.games3);
 					TextView imgGames3 = (TextView) findViewById(R.id.games3); 
@@ -408,7 +414,8 @@ public class PartitaScala40QD extends Activity {
 	        		break;
 	        case 4: TextView pl4Name = (TextView) findViewById(R.id.player4);
 	        		ProgressBar scoreBar4 = (ProgressBar) findViewById(R.id.scoreBar4);
-	        		TextView scoreText4 = (TextView) findViewById(R.id.scoreText4);
+					scoreBar4.setMax(punteggio);
+					TextView scoreText4 = (TextView) findViewById(R.id.scoreText4);
 	        		TextView pl4Games = (TextView) findViewById(R.id.games4);
 					TextView imgGames4 = (TextView) findViewById(R.id.games4); 
 	        		if (pl4.getName().equals("dummy")){
@@ -432,6 +439,7 @@ public class PartitaScala40QD extends Activity {
 		            break;
 	        case 5: TextView pl5Name = (TextView) findViewById(R.id.player5);
 					ProgressBar scoreBar5 = (ProgressBar) findViewById(R.id.scoreBar5);
+					scoreBar5.setMax(punteggio);
 					TextView scoreText5 = (TextView) findViewById(R.id.scoreText5);
 	        		TextView pl5Games = (TextView) findViewById(R.id.games5);
 					TextView imgGames5 = (TextView) findViewById(R.id.games5); 
@@ -456,6 +464,7 @@ public class PartitaScala40QD extends Activity {
 	        		break;
 	        case 6: TextView pl6Name = (TextView) findViewById(R.id.player6);
 					ProgressBar scoreBar6 = (ProgressBar) findViewById(R.id.scoreBar6);
+					scoreBar6.setMax(punteggio);
 					TextView scoreText6 = (TextView) findViewById(R.id.scoreText6);
 	        		TextView pl6Games = (TextView) findViewById(R.id.games6);
 					TextView imgGames6 = (TextView) findViewById(R.id.games6); 
@@ -480,6 +489,7 @@ public class PartitaScala40QD extends Activity {
 	        		break;
 	        case 7: TextView pl7Name = (TextView) findViewById(R.id.player7);
 					ProgressBar scoreBar7 = (ProgressBar) findViewById(R.id.scoreBar7);
+					scoreBar7.setMax(punteggio);
 					TextView scoreText7 = (TextView) findViewById(R.id.scoreText7);
 	        		TextView pl7Games = (TextView) findViewById(R.id.games7);
 					TextView imgGames7 = (TextView) findViewById(R.id.games7); 
@@ -504,6 +514,7 @@ public class PartitaScala40QD extends Activity {
 	        		break;
 	        case 8: TextView pl8Name = (TextView) findViewById(R.id.player8);
 					ProgressBar scoreBar8 = (ProgressBar) findViewById(R.id.scoreBar8);
+					scoreBar8.setMax(punteggio);
 					TextView scoreText8 = (TextView) findViewById(R.id.scoreText8);
 	        		TextView pl8Games = (TextView) findViewById(R.id.games8);
 					TextView imgGames8 = (TextView) findViewById(R.id.games8); 
@@ -528,6 +539,7 @@ public class PartitaScala40QD extends Activity {
 	        		break;
 	        case 9: TextView pl9Name = (TextView) findViewById(R.id.player9);
 					ProgressBar scoreBar9 = (ProgressBar) findViewById(R.id.scoreBar9);
+					scoreBar9.setMax(punteggio);
 					TextView scoreText9 = (TextView) findViewById(R.id.scoreText9);
 	        		TextView pl9Games = (TextView) findViewById(R.id.games9);
 					TextView imgGames9 = (TextView) findViewById(R.id.games9); 
@@ -552,6 +564,7 @@ public class PartitaScala40QD extends Activity {
 	        		break;
 	        case 10: TextView pl10Name = (TextView) findViewById(R.id.player10);
 					ProgressBar scoreBar10 = (ProgressBar) findViewById(R.id.scoreBar10);
+					scoreBar10.setMax(punteggio);
 					TextView scoreText10 = (TextView) findViewById(R.id.scoreText10);
 	        		TextView pl10Games = (TextView) findViewById(R.id.games10);
 					TextView imgGames10 = (TextView) findViewById(R.id.games10); 
@@ -684,7 +697,7 @@ public class PartitaScala40QD extends Activity {
 			if(gameType.equals("closed")){
 				txtData=txtData+((numPlayers*Float.parseFloat(valueP))+","+valueP+",0\n");
 			}else{
-				txtData=txtData+valueP+"\n";
+				txtData=txtData+valueP+","+punteggio+"\n";
 			}	
 	        for (int b=0; b < numPlayers; b++) {
 	    		txtData=txtData+effectivePl[b].getName()+","+effectivePl[b].getScore()+","+effectivePl[b].getIsOut()+","+effectivePl[b].getGames()+","+effectivePl[b].getReenter()+"\n";
@@ -741,10 +754,10 @@ public class PartitaScala40QD extends Activity {
 	    		if(effectivePl[b].getIsOut() == true){
 		    		txtData+="<td bgcolor=\"#"+bgcolor+"\" valign=\"center\"><h1><font color=\"#"+colorf+"\">"+effectivePl[b].getScore()+"</font></h1></td>\n";
 	    		}else{
-	    			if(effectivePl[b].getScore() > 150){
+	    			if(effectivePl[b].getScore() > punteggio){
 	    				txtData+="<td bgcolor=\"#"+bgcolor+"\" valign=\"center\"><h1><font color=\"#FF0000\">"+effectivePl[b].getScore()+"</font color></h1></td>\n";
 	    			}else{
-	    				txtData+="<td bgcolor=\"#"+bgcolor+"\" valign=\"center\"><h1><font color=\"#"+colorf+"\">"+effectivePl[b].getScore()+" ("+(150-effectivePl[b].getScore())+")</font></h1></td>\n";
+	    				txtData+="<td bgcolor=\"#"+bgcolor+"\" valign=\"center\"><h1><font color=\"#"+colorf+"\">"+effectivePl[b].getScore()+" ("+(punteggio-effectivePl[b].getScore())+")</font></h1></td>\n";
 	    			}
 	    		}
 	    	}			
