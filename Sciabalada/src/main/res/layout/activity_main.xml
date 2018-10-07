@@ -34,7 +34,7 @@
         android:layout_height="75dp"
         android:gravity="center|center"
         android:textSize="30sp"
-        android:text="Scala 40" 
+        android:text="Scala 40 a Rientri"
         android:onClick="scala40"/>
 
     <TextView
@@ -50,7 +50,7 @@
         android:layout_width="400dp"
         android:layout_height="75dp"
         android:textSize="30sp"
-        android:text="Scala 40 Quick and Dirty" 
+        android:text="Scala 40"
         android:onClick="scala40QD"/>
     
     <TextView
