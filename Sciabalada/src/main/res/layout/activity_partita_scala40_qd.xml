@@ -18,13 +18,24 @@
                 android:id="@+id/jackpot"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_weight="1"
                 android:textSize="38sp"
                 android:textStyle="bold"
-                android:gravity="bottom|center" />
-            
-            </TableRow>
+                android:gravity="bottom|left" />
+
+			<Button
+				android:id="@+id/storico"
+				android:layout_width="200dp"
+				android:layout_height="75dp"
+				android:onClick="storico"
+				android:gravity="center|center"
+				android:text="Storico Partita"
+				android:layout_marginRight="20dp"
+				android:layout_marginTop="2dp"
+				android:layout_toRightOf="@+id/jackpot" />
+
+		</TableRow>
         <TableRow 
             android:layout_width="0px"
             android:layout_height="0px" 

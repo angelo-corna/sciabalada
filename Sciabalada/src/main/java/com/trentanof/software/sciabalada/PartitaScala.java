@@ -43,6 +43,10 @@ import android.widget.Toast;
 
 public class PartitaScala extends Activity {
 
+	public final static String EXTRA_MESSAGE = "com.trentanof.software.sciabalada.MESSAGE";
+
+	String logStorico = "\n";
+
 	//// create the players
 	Player pl1 = new Player(0,"dummy",1,false);
 	Player pl2 = new Player(0,"dummy",2,false);
@@ -63,7 +67,7 @@ public class PartitaScala extends Activity {
 	int numPlayers=0;
 	int numReenters = 0;
 	java.util.Date date= new java.util.Date();
-	String timestamp = new java.text.SimpleDateFormat("yyyyMMdd_hmmssa").format(date);
+	String timestamp = new java.text.SimpleDateFormat("yyyyMMdd_hhmmssa").format(date);
 	String fileName = "scala40_"+timestamp;
 	
 	Player[] effectivePl = new Player[10];
@@ -145,11 +149,15 @@ public class PartitaScala extends Activity {
    		TextView jackpot = (TextView) findViewById(R.id.jackpot);
 		jackpot.setText("Jackpot "+(numPlayers*Float.parseFloat(valueP)+ numReenters*Float.parseFloat(valueR))+" €");
 		TextView puntata = (TextView) findViewById(R.id.puntata);
-		puntata.setText("Puntata "+ valueP +" €");
-		TextView rientro = (TextView) findViewById(R.id.rientro);
-		rientro.setText("Rientro "+ valueR +" €");
- 		
-		// display the players
+		puntata.setText("Puntata "+ valueP +" € - Rientro "+ valueR +" €");
+		//TextView rientro = (TextView) findViewById(R.id.rientro);
+		//rientro.setText("Rientro "+ valueR +" €");
+
+		logStorico = logStorico + "Partita Scala 40 a rienti del " + timestamp.substring(6,8) + "/" + timestamp.substring(4,6) + "/" + timestamp.substring(0,4) + "\n";
+		logStorico = logStorico + "Puntata "+ valueP +" € - Rientro "+ valueR +" €\n\n";
+//		logStorico = logStorico + "Jackpot "+(numPlayers*Float.parseFloat(valueP)+ numReenters*Float.parseFloat(valueR))+" €\n\n";
+
+				// display the players
 		DisplayPlayerData(pl1);
 		DisplayPlayerData(pl2);
 		DisplayPlayerData(pl3);
@@ -312,7 +320,8 @@ public class PartitaScala extends Activity {
 					 alertDialogBuilder.setNegativeButton("Rientra",
 					            new DialogInterface.OnClickListener() {
 					                public void onClick(DialogInterface dialog, int id) {
-					                	int valueReenter = 0;
+										int savScore = plselected.getScore();
+										int valueReenter = 0;
 					         			for (int i=0; i < numPlayers; i++) {
 					        				if (effectivePl[i] != plselected & effectivePl[i].getIsOut() == false){
 					        					if (effectivePl[i].getScore() > valueReenter & effectivePl[i].getScore() < 301){valueReenter=effectivePl[i].getScore();}
@@ -328,7 +337,10 @@ public class PartitaScala extends Activity {
 					         			jackpot.setText("Jackpot "+(numPlayers*Float.parseFloat(valueP) + numReenters*Float.parseFloat(valueR))+" €");
 					         			DisplayPlayerData(plselected);
 										saveFile("onGoing");
-					                }
+										logStorico = logStorico + getFormattedTimestamp() + " - " + plselected.getName() + " - Rientra - Da "
+												+ savScore + " a " + plselected.getScore() + "\n";
+
+									}
 					            });
 				 }
 			 }else{	
@@ -353,9 +365,12 @@ public class PartitaScala extends Activity {
 				                public void onClick(DialogInterface dialog, int id) {
 				                	String replaceScoreString = String.valueOf(textBox.getText());
 				            		if(!replaceScoreString.equals("")){
+										int savScore = plselected.getScore();
 				            			int replaceScore = Integer.parseInt(replaceScoreString);
 				            			plselected.setScore(replaceScore);
 				            			DisplayPlayerData(plselected);
+										logStorico = logStorico + getFormattedTimestamp() + " - " + plselected.getName() + " - " + replaceScore + " punti sostituiti - Da "
+												+ savScore + " a " + plselected.getScore() + "\n";
 				            		}
 									saveFile("onGoing");
 				                }
@@ -367,11 +382,14 @@ public class PartitaScala extends Activity {
 								public void onClick(DialogInterface dialog, int id) {
 				                	String addScoreString = String.valueOf(textBox.getText());
 				                	if(!addScoreString.equals("")){
+										int savScore = plselected.getScore();
 				            			int addScore = Integer.parseInt(addScoreString);
 				            			plselected.setScore(plselected.getScore()+addScore);
 				            			plselected.setGames(plselected.getGames()+1);
 				            			DisplayPlayerData(plselected);
 				            			setColorsGames();
+										logStorico = logStorico + getFormattedTimestamp() + " - " + plselected.getName() + " - " + addScore + " punti aggiunti - Da "
+												+ savScore + " a " + plselected.getScore() + "\n";
 				                	}
 									saveFile("onGoing");
 				                }
@@ -894,6 +912,14 @@ public class PartitaScala extends Activity {
 	}
 
 
+	public String getFormattedTimestamp(){
+		java.util.Date dateLog= new java.util.Date();
+		String timestampLog = new java.text.SimpleDateFormat("yyyyMMddhhmmssa").format(dateLog);
+		String timestampLogF = timestampLog.substring(6,8) + "/" + timestampLog.substring(4,6) + "/" + timestampLog.substring(0,4)
+				+ " " + timestampLog.substring(8,10) + ":" + timestampLog.substring(10,12) + ":" + timestampLog.substring(12,14) + " " + timestampLog.substring(14,16);
+		return timestampLogF;
+	}
+
 	public void saveFile(String gameType){
 		try {
 	        File myFile = new File(destinationPath+"/"+fileName);
@@ -986,4 +1012,10 @@ public class PartitaScala extends Activity {
 	    }
 	}
 
+	/** Called when the user clicks the storico button */
+	public void storico(View v) {
+		Intent intent = new Intent(this, Storico.class);
+		intent.putExtra(EXTRA_MESSAGE, logStorico);
+		this.startActivity(intent);
+	}
 }

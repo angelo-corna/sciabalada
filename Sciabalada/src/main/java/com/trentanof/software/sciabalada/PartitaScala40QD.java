@@ -43,6 +43,10 @@ import android.widget.Toast;
 
 public class PartitaScala40QD extends Activity {
 
+	public final static String EXTRA_MESSAGE = "com.trentanof.software.sciabalada.MESSAGE";
+
+	String logStorico = "\n";
+
 	//// create the players
 	Player pl1 = new Player(0,"dummy",1);
 	Player pl2 = new Player(0,"dummy",2);
@@ -63,7 +67,7 @@ public class PartitaScala40QD extends Activity {
 	String destinationPath;
 	int numReenters = 0;
 	java.util.Date date= new java.util.Date();
-	String timestamp = new java.text.SimpleDateFormat("yyyyMMdd_hmmssa").format(date);
+	String timestamp = new java.text.SimpleDateFormat("yyyyMMdd_hhmmssa").format(date);
 	String fileName = "scala40QD_"+timestamp;
 	
 	Player[] effectivePl = new Player[10];
@@ -137,7 +141,9 @@ public class PartitaScala40QD extends Activity {
 		
    		TextView jackpot = (TextView) findViewById(R.id.jackpot);
 		jackpot.setText("Jackpot "+numPlayers*Float.parseFloat(valueP)+" €");
- 		
+
+		logStorico = logStorico + "Partita Scala 40 del " + timestamp.substring(6,8) + "/" + timestamp.substring(4,6) + "/" + timestamp.substring(0,4) + "\n";
+		logStorico = logStorico + "Jackpot " + numPlayers*Float.parseFloat(valueP) + " €\n\n";
 
 		// display the players
 		DisplayPlayerData(pl1);
@@ -244,12 +250,15 @@ public class PartitaScala40QD extends Activity {
 			 alertDialogBuilder.setNeutralButton("Sostituisci",
 			            new DialogInterface.OnClickListener() {
 			                public void onClick(DialogInterface dialog, int id) {
+								int savScore = plselected.getScore();
 			                	String replaceScoreString = String.valueOf(textBox.getText());
 			            		if(!replaceScoreString.equals("")){
 			            			int replaceScore = Integer.parseInt(replaceScoreString);
 			            			plselected.setScore(replaceScore);
 			            			if(plselected.getScore() > punteggio){plselected.setIsOut(true);}
 			            			DisplayPlayerData(plselected);
+									logStorico = logStorico + getFormattedTimestamp() + " - " + plselected.getName() + " - " + replaceScore + " punti sostituiti - Da "
+											+ savScore + " a " + plselected.getScore() + "\n";
 			            		}
 								saveFile("onGoing");
 			                }
@@ -261,12 +270,15 @@ public class PartitaScala40QD extends Activity {
 							public void onClick(DialogInterface dialog, int id) {
 			                	String addScoreString = String.valueOf(textBox.getText());
 			                	if(!addScoreString.equals("")){
-			            			int addScore = Integer.parseInt(addScoreString);
+									int savScore = plselected.getScore();
+									int addScore = Integer.parseInt(addScoreString);
 			            			plselected.setScore(plselected.getScore()+addScore);
 			            			plselected.setGames(plselected.getGames()+1);
 			            			if(plselected.getScore() > punteggio){plselected.setIsOut(true);}
 			            			DisplayPlayerData(plselected);
 			            			setColorsGames();
+									logStorico = logStorico + getFormattedTimestamp() + " - " + plselected.getName() + " - " + addScore + " punti aggiunti - Da "
+											+ savScore + " a " + plselected.getScore() + "\n";
 			            			// and the winner is .....
 				                	int numPlayersIn=0;	
 		                			String namePlayerIn = "";
@@ -686,7 +698,15 @@ public class PartitaScala40QD extends Activity {
 
 	}
 
-	
+	public String getFormattedTimestamp(){
+		java.util.Date dateLog= new java.util.Date();
+		String timestampLog = new java.text.SimpleDateFormat("yyyyMMddhhmmssa").format(dateLog);
+		String timestampLogF = timestampLog.substring(6,8) + "/" + timestampLog.substring(4,6) + "/" + timestampLog.substring(0,4)
+				+ " " + timestampLog.substring(8,10) + ":" + timestampLog.substring(10,12) + ":" + timestampLog.substring(12,14) + " " + timestampLog.substring(14,16);
+		return timestampLogF;
+	}
+
+
 	public void saveFile(String gameType){
 		try {
 	        File myFile = new File(destinationPath+"/"+fileName);
@@ -771,8 +791,11 @@ public class PartitaScala40QD extends Activity {
 	        Toast.makeText(getBaseContext(), e.getMessage(),
 	                Toast.LENGTH_SHORT).show();
 	    }
-		
-		
-
+	}
+	/** Called when the user clicks the storico button */
+	public void storico(View v) {
+		Intent intent = new Intent(this, StoricoQD.class);
+		intent.putExtra(EXTRA_MESSAGE, logStorico);
+		this.startActivity(intent);
 	}
 }

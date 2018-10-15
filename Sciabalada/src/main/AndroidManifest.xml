@@ -51,6 +51,14 @@
             android:label="@string/title_activity_resume" >
         </activity>
         <activity
+            android:name="com.trentanof.software.sciabalada.Storico"
+            android:label="Storico" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.StoricoQD"
+            android:label="Storico" >
+        </activity>
+        <activity
             android:name="com.trentanof.software.sciabalada.Statistiche"
             android:label="@string/title_activity_statistiche" >
         </activity>

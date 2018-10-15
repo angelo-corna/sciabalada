@@ -30,15 +30,18 @@
                 android:layout_weight="1"
                 android:textSize="38sp"
                 android:textStyle="bold"
-                android:gravity="bottom|center" />
-            <TextView
-                android:id="@+id/rientro"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginRight="100dp"
-                android:textSize="18sp"
-                android:layout_weight="1"
-                android:gravity="bottom|right" />
+                android:gravity="bottom|left" />
+
+			<Button
+				android:id="@+id/storico"
+				android:layout_width="200dp"
+				android:layout_height="75dp"
+				android:onClick="storico"
+				android:gravity="center|center"
+				android:text="Storico Partita"
+				android:layout_marginRight="10dp"
+				android:layout_marginTop="2dp"
+				android:layout_toRightOf="@+id/jackpot" />
             
             
             </TableRow>
