@@ -37,7 +37,7 @@ public class Statistiche extends Activity {
     float cashInCM;
     float cashInKR;
 
-    int winScore;
+//    int winScore;
 
     int scopaScoreAC;
     int scopaScoreCM;
@@ -138,11 +138,11 @@ public class Statistiche extends Activity {
                     String valueP = partsSl[1];
                     String valueR = partsSl[2];
                     String plData;
-                    if (file[i].getName().substring(0, 9).equals("scala40QD")) {
-                        winScore = 151;
-                    } else {
-                        winScore = 301;
-                    }
+                    //if (file[i].getName().substring(0, 9).equals("scala40QD")) {
+                    //    winScore = 151;
+                    //} else {
+                    //    winScore = 301;
+                    //}
                     while (true) {
                         plData = br.readLine();
                         if (plData == null)
@@ -156,7 +156,9 @@ public class Statistiche extends Activity {
                             //rientri
                             float reEnters = angelo[1] + Float.parseFloat(parts[4]);
                             //partite vinte
-                            if (Integer.parseInt(parts[1]) < winScore) {
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            System.out.println("Angelo: "+parts[2]);
+                            if (!Boolean.parseBoolean(parts[2])) {
                                 winGames = angelo[2] + 1;
                             } else {
                                 winGames = angelo[2];
@@ -165,7 +167,8 @@ public class Statistiche extends Activity {
                             float cashOut = angelo[3] + Float.parseFloat(valueP) + (Float.parseFloat(parts[4]) * Float.parseFloat(valueR));
                             //vincite
                             float cashIn;
-                            if (Integer.parseInt(parts[1]) < winScore) {
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
                                 cashIn = angelo[4] + Float.parseFloat(jackpot);
                             } else {
                                 cashIn = angelo[4];
@@ -191,7 +194,8 @@ public class Statistiche extends Activity {
                             //rientri
                             float reEnters = co[1] + Float.parseFloat(parts[4]);
                             //partite vinte
-                            if (Integer.parseInt(parts[1]) < winScore) {
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
                                 winGames = co[2] + 1;
                             } else {
                                 winGames = co[2];
@@ -200,8 +204,9 @@ public class Statistiche extends Activity {
                             float cashOut = co[3] + Float.parseFloat(valueP) + (Float.parseFloat(parts[4]) * Float.parseFloat(valueR));
                             //vincite
                             float cashIn;
-                            if (Integer.parseInt(parts[1]) < winScore) {
-                                cashIn = co[4] + Float.parseFloat(jackpot);
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
+                                    cashIn = co[4] + Float.parseFloat(jackpot);
                             } else {
                                 cashIn = co[4];
                             }
@@ -226,8 +231,9 @@ public class Statistiche extends Activity {
                             //rientri
                             float reEnters = guest1[1] + Float.parseFloat(parts[4]);
                             //partite vinte
-                            if (Integer.parseInt(parts[1]) < winScore) {
-                                winGames = guest1[2] + 1;
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
+                                    winGames = guest1[2] + 1;
                             } else {
                                 winGames = guest1[2];
                             }
@@ -235,8 +241,9 @@ public class Statistiche extends Activity {
                             float cashOut = guest1[3] + Float.parseFloat(valueP) + (Float.parseFloat(parts[4]) * Float.parseFloat(valueR));
                             //vincite
                             float cashIn;
-                            if (Integer.parseInt(parts[1]) < winScore) {
-                                cashIn = guest1[4] + Float.parseFloat(jackpot);
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
+                                    cashIn = guest1[4] + Float.parseFloat(jackpot);
                             } else {
                                 cashIn = guest1[4];
                             }
@@ -262,8 +269,9 @@ public class Statistiche extends Activity {
                             //rientri
                             float reEnters = guest2[1] + Float.parseFloat(parts[4]);
                             //partite vinte
-                            if (Integer.parseInt(parts[1]) < winScore) {
-                                winGames = guest2[2] + 1;
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
+                                    winGames = guest2[2] + 1;
                             } else {
                                 winGames = guest2[2];
                             }
@@ -271,8 +279,9 @@ public class Statistiche extends Activity {
                             float cashOut = guest2[3] + Float.parseFloat(valueP) + (Float.parseFloat(parts[4]) * Float.parseFloat(valueR));
                             //vincite
                             float cashIn;
-                            if (Integer.parseInt(parts[1]) < winScore) {
-                                cashIn = guest2[4] + Float.parseFloat(jackpot);
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
+                                    cashIn = guest2[4] + Float.parseFloat(jackpot);
                             } else {
                                 cashIn = guest2[4];
                             }
@@ -298,8 +307,9 @@ public class Statistiche extends Activity {
                             //rientri
                             float reEnters = karmen[1] + Float.parseFloat(parts[4]);
                             //partite vinte
-                            if (Integer.parseInt(parts[1]) < winScore) {
-                                winGames = karmen[2] + 1;
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
+                                    winGames = karmen[2] + 1;
                             } else {
                                 winGames = karmen[2];
                             }
@@ -307,8 +317,9 @@ public class Statistiche extends Activity {
                             float cashOut = karmen[3] + Float.parseFloat(valueP) + (Float.parseFloat(parts[4]) * Float.parseFloat(valueR));
                             //vincite
                             float cashIn;
-                            if (Integer.parseInt(parts[1]) < winScore) {
-                                cashIn = karmen[4] + Float.parseFloat(jackpot);
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
+                                    cashIn = karmen[4] + Float.parseFloat(jackpot);
                             } else {
                                 cashIn = karmen[4];
                             }
@@ -334,8 +345,9 @@ public class Statistiche extends Activity {
                             //rientri
                             float reEnters = katia[1] + Float.parseFloat(parts[4]);
                             //partite vinte
-                            if (Integer.parseInt(parts[1]) < winScore) {
-                                winGames = katia[2] + 1;
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
+                                    winGames = katia[2] + 1;
                             } else {
                                 winGames = katia[2];
                             }
@@ -343,8 +355,9 @@ public class Statistiche extends Activity {
                             float cashOut = katia[3] + Float.parseFloat(valueP) + (Float.parseFloat(parts[4]) * Float.parseFloat(valueR));
                             //vincite
                             float cashIn;
-                            if (Integer.parseInt(parts[1]) < winScore) {
-                                cashIn = katia[4] + Float.parseFloat(jackpot);
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
+                                    cashIn = katia[4] + Float.parseFloat(jackpot);
                             } else {
                                 cashIn = katia[4];
                             }
@@ -371,8 +384,9 @@ public class Statistiche extends Activity {
                             //rientri
                             float reEnters = guest3[1] + Float.parseFloat(parts[4]);
                             //partite vinte
-                            if (Integer.parseInt(parts[1]) < winScore) {
-                                winGames = guest3[2] + 1;
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
+                                    winGames = guest3[2] + 1;
                             } else {
                                 winGames = guest3[2];
                             }
@@ -380,8 +394,9 @@ public class Statistiche extends Activity {
                             float cashOut = guest3[3] + Float.parseFloat(valueP) + (Float.parseFloat(parts[4]) * Float.parseFloat(valueR));
                             //vincite
                             float cashIn;
-                            if (Integer.parseInt(parts[1]) < winScore) {
-                                cashIn = guest3[4] + Float.parseFloat(jackpot);
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
+                                    cashIn = guest3[4] + Float.parseFloat(jackpot);
                             } else {
                                 cashIn = guest3[4];
                             }
@@ -409,8 +424,9 @@ public class Statistiche extends Activity {
                             //rientri
                             float reEnters = mario[1] + Float.parseFloat(parts[4]);
                             //partite vinte
-                            if (Integer.parseInt(parts[1]) < winScore) {
-                                winGames = mario[2] + 1;
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
+                                    winGames = mario[2] + 1;
                             } else {
                                 winGames = mario[2];
                             }
@@ -418,8 +434,9 @@ public class Statistiche extends Activity {
                             float cashOut = mario[3] + Float.parseFloat(valueP) + (Float.parseFloat(parts[4]) * Float.parseFloat(valueR));
                             //vincite
                             float cashIn;
-                            if (Integer.parseInt(parts[1]) < winScore) {
-                                cashIn = mario[4] + Float.parseFloat(jackpot);
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
+                                    cashIn = mario[4] + Float.parseFloat(jackpot);
                             } else {
                                 cashIn = mario[4];
                             }
@@ -445,8 +462,9 @@ public class Statistiche extends Activity {
                             //rientri
                             float reEnters = mauro[1] + Float.parseFloat(parts[4]);
                             //partite vinte
-                            if (Integer.parseInt(parts[1]) < winScore) {
-                                winGames = mauro[2] + 1;
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
+                                    winGames = mauro[2] + 1;
                             } else {
                                 winGames = mauro[2];
                             }
@@ -454,8 +472,9 @@ public class Statistiche extends Activity {
                             float cashOut = mauro[3] + Float.parseFloat(valueP) + (Float.parseFloat(parts[4]) * Float.parseFloat(valueR));
                             //vincite
                             float cashIn;
-                            if (Integer.parseInt(parts[1]) < winScore) {
-                                cashIn = mauro[4] + Float.parseFloat(jackpot);
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
+                                    cashIn = mauro[4] + Float.parseFloat(jackpot);
                             } else {
                                 cashIn = mauro[4];
                             }
@@ -481,8 +500,9 @@ public class Statistiche extends Activity {
                             //rientri
                             float reEnters = renzo[1] + Float.parseFloat(parts[4]);
                             //partite vinte
-                            if (Integer.parseInt(parts[1]) < winScore) {
-                                winGames = renzo[2] + 1;
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
+                                    winGames = renzo[2] + 1;
                             } else {
                                 winGames = renzo[2];
                             }
@@ -490,8 +510,9 @@ public class Statistiche extends Activity {
                             float cashOut = renzo[3] + Float.parseFloat(valueP) + (Float.parseFloat(parts[4]) * Float.parseFloat(valueR));
                             //vincite
                             float cashIn;
-                            if (Integer.parseInt(parts[1]) < winScore) {
-                                cashIn = renzo[4] + Float.parseFloat(jackpot);
+                            //if (Integer.parseInt(parts[1]) < winScore) {
+                            if (!Boolean.parseBoolean(parts[2])) {
+                                    cashIn = renzo[4] + Float.parseFloat(jackpot);
                             } else {
                                 cashIn = renzo[4];
                             }
